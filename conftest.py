@@ -6,6 +6,7 @@ from selenium import webdriver
 def setup():
     # print(brow)
     # brow == "chrome"
+    global driver
     driver = webdriver.Chrome()
     driver.maximize_window()
     yield driver
