@@ -19,8 +19,8 @@ class Homefunctionality():
     # newjoin_ele = (By.XPATH, "//span[@class='icon ic-supervisor icon-xxs icon-accent-violet']")
     newjoin_ele = (By.CSS_SELECTOR, ".icon.ic-supervisor.icon-xxs.icon-accent-violet")
 
-    def __init__(self, driver):
-        self.driver = driver
+    def __init__(self, setup):
+        self.driver = setup
 
     def click_homefunction(self):
         self.driver.find_element(*self.Home_function).click()
