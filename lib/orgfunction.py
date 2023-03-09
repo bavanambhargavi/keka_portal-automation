@@ -8,7 +8,7 @@ password = config.password
 
 
 class OrgFunction():
-    org_l = (By.XPATH, "//span[@class='ic-org sidebar-list-icon']")
+    org_l = (By.XPATH, "//span[@class='ki-org sidebar-list-icon")
     # employee = (By.XPATH, "//span[normalize-space()='Employees']")
     Doc = (By.XPATH, "//li[@class='active']//a[normalize-space()='Documents']")
     engage_loc = (By.XPATH, "//a[@routerlink='engage']")
