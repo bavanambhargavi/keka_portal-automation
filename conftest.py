@@ -13,11 +13,11 @@ def setup(brow):
     driver.close()
 
 
-def pytest_addoption(parser):
-    parser.addoption("--browser")
+# def pytest_addoption(parser):
+#     parser.addoption("--browser")
 
 
-@pytest.fixture
-def brow(request):
-    return request.config.getoption("--browser")
+# @pytest.fixture
+# def brow(request):
+#     return request.config.getoption("--browser")
 
