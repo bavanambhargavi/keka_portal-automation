@@ -1,4 +1,4 @@
-import time
+
 from data import config
 from lib.login import Loginpage
 from lib.inboxfunction import InboxFunctionality
@@ -18,9 +18,6 @@ class TestInboxFunction():
         self.log.set_username(self.user)
         self.log.set_password(self.password)
         self.log.clickonlogin()
-        time.sleep(4)
+
         self.inbox = InboxFunctionality(self.driver)
         self.inbox.checkonInbox()
-        time.sleep(4)
-
-

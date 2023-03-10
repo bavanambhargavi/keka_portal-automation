@@ -20,6 +20,6 @@ class TestOrginazation():
         self.log.clickonlogin()
         self.org = OrgFunction(self.driver)
         self.org.clickonorg()
-        time.sleep(4)
+        
 
         

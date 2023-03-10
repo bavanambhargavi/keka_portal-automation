@@ -3,21 +3,21 @@ from selenium import webdriver
 
 
 @pytest.fixture()
-def setup():
-    print()
-    # brow =s= "chrome"
+def setup(brow):
+    print(brow)
+    brow = "chrome"
     # global driver
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome.l
     driver.maximize_window()
     yield driver
     driver.close()
 
 
-# def pytest_addoption(parser):
-#     parser.addoption("--browser")
+def pytest_addoption(parser):
+    parser.addoption("--browser")
 
 
-# @pytest.fixture
-# def brow(request):
-#     return request.config.getoption("--browser")
+@pytest.fixture
+def brow(request):
+    return request.config.getoption("--browser")
 

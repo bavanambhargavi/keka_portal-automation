@@ -1,7 +1,6 @@
 from lib.myteamfunction import MyTeam
 from lib.login import Loginpage
 from data import config
-import time
 
 
 class TestMyteam():
@@ -20,4 +19,4 @@ class TestMyteam():
         self.log.clickonlogin()
         self.team = MyTeam(self.driver)
         self.team.myteam()
-        time.sleep(4)
+    

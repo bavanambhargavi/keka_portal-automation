@@ -1,7 +1,7 @@
 from lib.profile import Profilpage
 from lib.login import Loginpage
 from data import config
-import time
+
 
 
 class TestProfileTab():
@@ -21,7 +21,6 @@ class TestProfileTab():
         self.profile = Profilpage(self.driver)
         self.profile.clickondown()
         self.profile.checkprofile()
-        time.sleep(3)
         self.profile.clickonpassword()
         self.profile.changepassword()
 
