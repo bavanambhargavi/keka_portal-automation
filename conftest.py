@@ -3,10 +3,7 @@ from selenium import webdriver
 
 
 @pytest.fixture()
-def setup(brow):
-    print(brow)
-    brow = "chrome"
-    # global driver
+def setup():
     driver = webdriver.Chrome()
     driver.maximize_window()
     yield driver
