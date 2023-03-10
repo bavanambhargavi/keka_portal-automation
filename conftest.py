@@ -1,4 +1,4 @@
-import pytest 
+import pytest
 from selenium import webdriver
 
 
@@ -7,10 +7,9 @@ def setup(brow):
     print(brow)
     brow = "chrome"
     # global driver
-    driver = webdriver.Chrome.l
+    driver = webdriver.Chrome()
     driver.maximize_window()
     yield driver
-    driver.close()
 
 
 def pytest_addoption(parser):
@@ -20,4 +19,3 @@ def pytest_addoption(parser):
 @pytest.fixture
 def brow(request):
     return request.config.getoption("--browser")
-

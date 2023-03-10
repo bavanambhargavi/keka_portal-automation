@@ -3,7 +3,6 @@ from lib.login import Loginpage
 from data import config
 
 
-
 class TestProfileTab():
 
     url = config.base_url
