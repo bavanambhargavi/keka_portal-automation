@@ -9,8 +9,8 @@ class TestMyteam():
     user = config.username
     password = config.password
 
-    def test_teamfun(self, setup):
-        self.driver = setup
+    def test_teamfun(self, driver):
+        self.driver = driver
         self.driver.get(self.url)
         self.log = Loginpage(self.driver)
         self.log.clickonpassword()

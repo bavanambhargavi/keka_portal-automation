@@ -10,8 +10,8 @@ class TestInboxFunction():
     user = config.username
     password = config.password
 
-    def test_Inboxfunctionality(self, setup):
-        self.driver = setup
+    def test_Inboxfunctionality(self, driver):
+        self.driver = driver
         self.driver.get(self.url)
         self.log = Loginpage(self.driver)
         self.log.clickonpassword()

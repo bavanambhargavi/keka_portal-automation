@@ -7,7 +7,7 @@ class TestLogin():
     user = config.username
     password = config.password
 
-    def test_keka_login(self, setup):
+    def test_keka_login(self, driver):
         self.driver = setup
         self.driver.get(self.url)
         self.source = Loginpage(self.driver)

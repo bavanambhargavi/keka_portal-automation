@@ -10,7 +10,7 @@ class TestOrginazation():
     user = config.username
     password = config.password
 
-    def test_check_orginzation(self, setup):
+    def test_check_orginzation(self, driver):
         self.driver = setup
         self.driver.get(self.url)
         self.log = Loginpage(self.driver)

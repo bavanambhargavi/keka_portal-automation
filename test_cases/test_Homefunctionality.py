@@ -9,8 +9,8 @@ class TestHomeFunction():
     user = config.username
     password = config.password
 
-    def test_Homefunction(self, setup):
-        self.driver = setup
+    def test_Homefunction(self, driver):
+        self.driver = driver
         self.driver.get(self.url)
         self.log = Loginpage(self.driver)
         self.log.clickonpassword()

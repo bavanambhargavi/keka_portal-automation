@@ -8,8 +8,8 @@ class TestMefunction():
     user = config.username
     password = config.password
 
-    def test_mefunctionality(self, setup):
-        self.driver = setup
+    def test_mefunctionality(self, driver):
+        self.driver = driver
         self.driver.get(self.url)
         self.logs = Loginpage(self.driver)
         self.logs.clickonpassword()
